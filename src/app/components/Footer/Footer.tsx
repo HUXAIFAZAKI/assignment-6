@@ -6,21 +6,21 @@ function Footer() {
     <footer className="w-screen">
       <section className="flex flex-col mx-auto gap-4 p-8 w-[80%]">
         {/* section1 */}
-        <div className="flex flex-row gap-4 justify-around items-center mb-4">
-          <div className=" rounded-sm p-4 w-[45%]">
-            <h2 className="text-xl font-bold">Subscribe to our newsletter</h2>
+        <div className="flex flex-col md:flex-row gap-4 justify-around items-center mb-4">
+          <div className="rounded-sm lg:p-4 sm:w-[65%] lg:w-[45%] text-center md:text-left">
+            <h2 className="text-2xl lg:text-xl font-bold">Subscribe to our newsletter</h2>
             <p className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div className="flex flex-row gap-2 rounded-sm p-4 w-[45%] flex-wrap">
+          <div className="flex flex-col md:flex-row gap-2 rounded-sm p-4 sm:w-full lg:w-[45%] flex-wrap">
             <input
               type="email"
               placeholder="Enter your email"
-              className="border border-black rounded-md px-2 py-1 h-[40px] w-[70%]"
+              className="border border-black rounded-md px-2 py-1 h-[40px] w-full lg:w-[70%] "
             />
             <button className="border border-black rounded-md p-4 h-[40px] flex items-center duration-200 hover:bg-black hover:text-white">
-              Subscribe
+              <span className="w-full text-center">Subscribe</span>
             </button>
             <p>
               By subscribing you agree to with our{" "}

@@ -4,8 +4,8 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <header className="w-screen">
-      <section className="flex flex-row justify-between items-center bg-[#F7F7F7] border-b border-black">
-        <div className={styles.container}>
+      <section className="hidden lg:flex flex-row justify-between items-center bg-[#F7F7F7] border-b border-black">
+        <div className={styles.container} >
           <div className="flex flex-row items-center gap-4">
             <span>Phone: +123 456 7890</span>
             <span className={styles.divider}></span>
@@ -75,7 +75,7 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-around items-center bg-[#F7F7F7] border-b border-[#676767] mt-4 px-2 py-3 rounded-sm select-none">
+      <section className="flex justify-around items-center bg-[#F7F7F7] border-b border-[#676767] mt-0 px-2 py-3 rounded-sm select-none lg:mt-4">
         <Link href="/">
           <svg
             width="131"
@@ -83,6 +83,7 @@ const Header = () => {
             viewBox="0 0 131 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-[151px] h-[62px] sm:w-[131px] sm:h-[42px] md:w-[141px] md:h-[52px] lg:w-[131px] lg:h-[42px] xl:w-[131px] xl:h-[42px] 2xl:w-[131px] 2xl:h-[42px]"
           >
             <path
               d="M15.7929 9.59521V9.59626C15.776 9.62534 12.2955 15.6292 7.95067 22.9595C3.59532 30.3077 0 36.1906 0 36.1906L12.3315 36.1365L12.3323 36.1364L12.3297 36.1459C18.3172 36.03 23.7182 32.0934 25.3119 26.1453C25.8102 24.286 25.8853 22.4143 25.5964 20.6255C24.8043 15.3582 20.9149 11.0745 15.7929 9.59521Z"
@@ -98,7 +99,7 @@ const Header = () => {
             />
           </svg>
         </Link>
-        <div className="flex justify-around items-center gap-10 bg-white h-[44px] w-[60%] px-4">
+        <div className="hidden lg:flex lg:justify-around lg:items-center lg:gap-10 bg-white lg:h-[44px] lg:w-[60%] px-4">
           <Link href="/" className={styles.navLink}>
             Home
           </Link>
@@ -125,6 +126,11 @@ const Header = () => {
               Sign Up
             </button>
           </div>
+        </div>
+        <div className="block lg:hidden">
+          <svg width="20" height="14" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[30px] h-[22px] sm:w-[25px] sm:h-[15px] md:w-[20px] md:h-[14px]">
+          <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="black"/>
+          </svg>
         </div>
       </section>
     </header>

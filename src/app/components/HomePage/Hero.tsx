@@ -7,10 +7,10 @@ const Hero = () => {
     return (
     <section className="flex flex-row justify-around items-center gap-4 w-full mx-auto h-[100vh] px-4">
     <div className="flex flex-col gap-4 justify-center items-start w-1/3">
-    <h1 className="text-[56px] font-bold">
+    <h1 className="sm:text-[24px] lg:text-[56px] font-bold">
         Learn new skills online with ease
     </h1>
-    <p className="text-[18px]">
+    <p className="sm:text-xl lg:text-[18px]">
         Discover a wide range of courses covering a variety of subjects,
         taught by expert instructors.
     </p>

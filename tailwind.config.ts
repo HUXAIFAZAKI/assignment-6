@@ -13,8 +13,11 @@ export default {
         foreground: "var(--foreground)",
       },
       dropShadow: {
-        'xl': '0 0px 20px rgba(25, 25, 25, 1)'
-      }
+        xl: "0 0px 20px rgba(25, 25, 25, 1)",
+      },
+      screens: {
+        sm: "425px",
+      },
     },
   },
   plugins: [],

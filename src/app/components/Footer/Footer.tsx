@@ -86,7 +86,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
           <div className="flex flex-col md:flex-row gap-4">
             <p className="text-center md:text-left">2023 Ddsgnr. All right reserved.</p>
-            <ul className="flex flex-row gap-6 underline">
+            <ul className="text-center md:text-left flex flex-row gap-6 underline">
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </li>

@@ -9,10 +9,10 @@ import John from "@/../public/Team/John Leboo.png"
 
 const Team = () => {
     return (
-      <section className="flex flex-col items-center gap-4 h-screen bg-[#F7F7F7] mt-[18rem] pb-10">
+      <section className="flex flex-col items-center gap-4 bg-[#F7F7F7] mt-8 pb-10">
       <div className="flex flex-col items-center gap-4 h-[25%] pt-10">
-        <h2 className="text-[32px] font-bold">Our Team</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h2 className="text-[32px]  font-bold">Our Team</h2>
+        <p className="text-center w-[80%] md:w-full md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-5 sm:gap-13 md:gap-36 lg:gap-x-72">
         <div className="flex flex-col items-center gap-4">

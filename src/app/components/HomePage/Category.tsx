@@ -2,10 +2,10 @@ import React from "react";
 
 const Category = () => {
     return (
-      <section className="flex flex-col justify-center items-center w-full h-[80vh]">
-      <div className="flex flex-col justify-center items-center gap-4 w-full">
-        <h2 className="text-[32px] font-bold">Explore Courses By Category</h2>
-        <p>
+      <section className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center py-8 gap-4 w-full">
+        <h2 className="text-center md:text-left text-[28px] md:text-[32px] font-bold">Explore Courses By Category</h2>
+        <p className="text-center md:text-left">
           Discover a wide range of courses covering a variety of subjects,
           taught by expert instructors.
         </p>

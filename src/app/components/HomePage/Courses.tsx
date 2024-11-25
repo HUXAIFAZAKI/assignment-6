@@ -9,7 +9,7 @@ import Course6 from "@/../public/Courses/WebFlow.png";
 
 const Trust = () => {
     return (
-      <section id="courses" className=" flex flex-col justify-center items-center w-full h-[100vh] my-56">
+      <section id="courses" className=" flex flex-col justify-center items-center w-full my-8">
       <h2 className="text-[42px] font-bold">Courses</h2>
       <p className="text-[18px] text-center w-[75%] mt-4">
         Your Ultimate Guide to learning

@@ -4,7 +4,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="w-screen">
-      <section className="flex flex-col mx-auto gap-4 p-8 w-[80%]">
+      <section className="flex flex-col mx-auto gap-4 p-8 w-full md:w-[80%]">
         {/* section1 */}
         <div className="flex flex-col md:flex-row gap-4 justify-around items-center mb-4">
           <div className="rounded-sm lg:p-4 sm:w-[65%] lg:w-[45%] text-center md:text-left">
@@ -17,12 +17,12 @@ function Footer() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="border border-black rounded-md px-2 py-1 h-[40px] w-full lg:w-[70%] "
+              className="border border-black rounded-md px-2 py-1 h-[40px] w-full md:w-[60%] lg:w-[70%] "
             />
             <button className="border border-black rounded-md p-4 h-[40px] flex items-center duration-200 hover:bg-black hover:text-white">
               <span className="w-full text-center">Subscribe</span>
             </button>
-            <p>
+            <p className="text-[12px]">
               By subscribing you agree to with our{" "}
               <span className="underline">privacy policy</span>.
             </p>
@@ -30,8 +30,8 @@ function Footer() {
         </div>
 
         {/* section2 */}
-        <div className="flex flex-row justify-around items-center mb-12">
-          <div className="flex flex-row gap-2 items-start h-48">
+        <div className="flex flex-col justify-center items-center md:flex-row md:justify-around items-center mb-12">
+          <div className="flex flex-row gap-2 items-start lg:h-48">
             <svg
               width="131"
               height="32"
@@ -54,7 +54,7 @@ function Footer() {
             </svg>
           </div>
 
-          <ul className="flex flex-col justify-center gap-4 mt-4 style-none">
+          <ul className="flex flex-col justify-center text-center md:text-left gap-4 mt-4 style-none">
             <h2 className="text-xl font-bold">Courses</h2>
             <li>Business</li>
             <li>Development</li>
@@ -62,7 +62,7 @@ function Footer() {
             <li>Design</li>
             <li>Programming</li>
           </ul>
-          <ul className="flex flex-col justify-center gap-4 mt-4 style-none">
+          <ul className="flex flex-col justify-center text-center md:text-left  gap-4 mt-4 style-none">
             <h2 className="text-xl font-bold">Resources</h2>
             <li>Career</li>
             <li>Resume</li>
@@ -70,7 +70,7 @@ function Footer() {
             <li>Interview Preperation</li>
             <li>Jobs</li>
           </ul>
-          <ul className="flex flex-col justify-center gap-4 mt-4 style-none">
+          <ul className="flex flex-col justify-center text-center md:text-left  gap-4 mt-4 style-none">
             <h2 className="text-xl font-bold">About Us</h2>
             <li>Contact</li>
             <li>Help/Support</li>
@@ -83,9 +83,9 @@ function Footer() {
         {/* section3 */}
         <span className="border-t border-black w-full mb-4"></span>
 
-        <div className="flex flex-row justify-between items-center">
-          <div className="flex flex-row gap-4">
-            <p>2023 Ddsgnr. All right reserved.</p>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-center md:text-left">2023 Ddsgnr. All right reserved.</p>
             <ul className="flex flex-row gap-6 underline">
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>

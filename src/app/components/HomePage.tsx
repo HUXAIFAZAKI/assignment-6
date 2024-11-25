@@ -12,11 +12,11 @@ const HomePage = () => {
     <main>
       <Hero />
       <Trust/>
-      {/* <Category/>
+      <Category/>
       <Acheivements/>
       <Courses/>
       <Team/>
-      <Reviews/> */}
+      <Reviews/>
     </main>
   );
 };
